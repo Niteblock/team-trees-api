@@ -19,7 +19,7 @@ app.get("/get-data", (req, res) => {
             treesLeft: await teamTrees.getLeft(),
             mostRecent: await teamTrees.getMostRecent(),
             totalTrees: await teamTrees.getTotalTrees(),
-            topTrees: await teamTrees.getMostTrees
+            topTrees: await teamTrees.getMostTrees()
         }
     }
     getData().then(data => {
